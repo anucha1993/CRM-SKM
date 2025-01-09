@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'บริษัทนำเข้าแรงงานต่างด้าว ดิ อิมพอร์ตเตอร์ 168 จำกัด')</title>
-    @vite(['resources/css/app.css','resources/js/app.js'])
-</head>
+@extends('layouts.app')
 
-<body class="bg-gray-100 text-gray-900">
-               
-    @include('partials.header')
-    @include('partials.menu')
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-    <div class="container mx-auto mt-4">
-        @yield('content')
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
+        </div>
     </div>
-
-    @include('partials.footer')
-</body>
-</html>
+</div>
+@endsection
