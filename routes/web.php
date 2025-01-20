@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\foreigndata\foreignDataController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
@@ -31,6 +32,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('users', UserController::class);
     Route::resource('products', ProductController::class);
 });
+
+
+//Foreign Data
+Route::get('foreigndata/create',[foreignDataController::class,'create'])->name('foreigndata.create');
 
 
 

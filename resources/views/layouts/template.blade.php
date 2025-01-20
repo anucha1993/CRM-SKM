@@ -220,7 +220,7 @@
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
-                <span class="d-none d-md-inline">Alexander Pierce</span>
+                <span class="d-none d-md-inline">Anucha Yothanane</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                 <!--begin::User Image-->
@@ -231,7 +231,7 @@
                     alt="User Image"
                   />
                   <p>
-                    Alexander Pierce - Web Developer
+                    Anucha Yothanane - Web Developer
                     <small>Member since Nov. 2023</small>
                   </p>
                 </li>
@@ -373,7 +373,7 @@
         <!--begin::Copyright-->
         <strong>
           Copyright &copy; 2014-2024&nbsp;
-          <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+          <a href="https://adminlte.io" class="text-decoration-none">Anucha Yothanan</a>.
         </strong>
         All rights reserved.
         <!--end::Copyright-->
